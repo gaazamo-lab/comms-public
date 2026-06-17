@@ -65,26 +65,7 @@ export function Header() {
               </ul>
             </nav>
 
-            <a
-              href="#contact"
-              className="hidden md:inline-flex items-center gap-2 bg-navy-900 text-white px-5 py-2.5 text-[12px] font-semibold tracking-wide uppercase hover:bg-navy-800 transition-colors"
-            >
-              Press Desk
-              <svg
-                className="w-3.5 h-3.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </a>
+
           </div>
         </div>
       </header>
