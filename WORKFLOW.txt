@@ -1,0 +1,12 @@
+I have provided a lot of documents to review, I want to build a public facing website for comms directorate, I want use to use these documents and some few webites to build a public facing for comms, https://law.stanford.edu/office-of-communications-and-public-relations/#slsnav-contact-us, https://venerable-syrniki-73de12.netlify.app/, https://clet-ivmr.vercel.app/
+
+The CCP logo is the logo for this Comms, and CLET logo is for CLET which comms is a directorate.
+
+the image in the images folder is the banner image for the hero section, it should be the background image.
+
+I have some simbols in /home/guston/Documents/comms-public/public/Adinkra Symbols, I would like you to use them accros the website, add some to the hero section.
+
+I need to add the pillars on the site afer the hero , if you check this website, the pillars are there, use this website as template but we can make it better than that , https://venerable-syrniki-73de12.netlify.app/.
+
+
+All the files needed for references are in /home/guston/Documents/COMMS FILES
