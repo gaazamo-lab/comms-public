@@ -40,7 +40,7 @@ const FLOATING_ADINKRA = [
 
 export function Hero() {
   return (
-    <section className="relative isolate min-h-[92vh] flex items-center bg-navy-950 overflow-hidden">
+    <section className="relative isolate min-h-[92vh] flex items-center  overflow-hidden ">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/GSL IMAGE.png"
@@ -48,11 +48,11 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-[0.38]"
+          className="object-cover "
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/90 via-navy-900/80 to-navy-900/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/10 via-navy-900/10 to-navy-950/90" />
         <div
-          className="absolute inset-0 opacity-[0.08]"
+          className="absolute inset-0 opacity-[0.1]"
           style={{
             backgroundImage:
               "url('/Adinkra Symbols/Gold/ADINKRA BACKGROUND Gold.png')",
@@ -70,7 +70,7 @@ export function Hero() {
       </div>
 
       <div
-        className="absolute inset-0 pointer-events-none -z-10"
+        className="absolute inset-0 pointer-events-none -z-10 "
         aria-hidden="true"
       >
         {FLOATING_ADINKRA.map((sym) => (
@@ -90,9 +90,9 @@ export function Hero() {
         ))}
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 w-full">
-        <div className="max-w-4xl">
-          <div className="flex items-center gap-4 mb-8">
+      <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 w-full flex justify-center text-center">
+        <div className="max-w-4xl flex flex-col items-center bg-black/60 p-12 rounded-xl">
+          {/* <div className="flex items-center justify-center gap-4 mb-8">
             <Image
               src="/logos/CLET CCP Logo .png"
               alt="CLET CCP Directorate emblem"
@@ -102,10 +102,10 @@ export function Hero() {
               priority
             />
             <div className="h-10 w-px bg-white/20" />
-            <span className="text-gold-400 text-[11px] sm:text-xs uppercase tracking-[0.28em] font-semibold">
-              Communications, Comms &amp; Partnerships Directorate
+            <span className="text-gold-400 text-[11px] sm:text-xs uppercase tracking-[0.28em] font-semibold text-left">
+              Corporate Communications and Partnerships Directorate
             </span>
-          </div>
+          </div> */}
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-heading font-bold text-white leading-[1.05] tracking-tight">
             The public voice of{" "}
@@ -114,14 +114,14 @@ export function Hero() {
             ecosystem.
           </h1>
 
-          <p className="mt-8 text-lg sm:text-xl text-white/70 max-w-2xl leading-relaxed">
+          <p className="mt-8 text-lg sm:text-2xl text-white max-w-2xl leading-relaxed mx-auto ">
             We are the trusted bridge between the Council for Legal Education
             and Training and the citizens, students, institutions, partners and
-            international community it serves — under the Legal Education Act,
+            international community it serves  under the Legal Education Act,
             2026.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4 justify-center">
             <a
               href="#pillars"
               className="group inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-7 py-3.5 text-sm font-semibold hover:bg-gold-400 transition-all"

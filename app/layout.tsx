@@ -18,13 +18,13 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title:
-    "Communications, Comms & Partnerships Directorate | CLET Ghana",
+    "Corporate Communications and Partnerships Directorate | CLET Ghana",
   description:
-    "The Communications, Comms & Partnerships (CCP) Directorate of the Council for Legal Education and Training (CLET), Republic of Ghana — the public voice, stakeholder bridge, and brand custodian of national legal education.",
+    "The Corporate Communications and Partnerships (CCP) Directorate of the Council for Legal Education and Training (CLET), Republic of Ghana — the public voice, stakeholder bridge, and brand custodian of national legal education.",
   metadataBase: new URL("https://comms.clet.gov.gh"),
   openGraph: {
     title:
-      "Communications, Comms & Partnerships Directorate | CLET Ghana",
+      "Corporate Communications and Partnerships Directorate | CLET Ghana",
     description:
       "Public communications, international relations and strategic partnerships for the Council for Legal Education and Training, Republic of Ghana.",
     type: "website",

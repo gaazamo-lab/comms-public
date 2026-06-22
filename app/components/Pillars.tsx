@@ -81,9 +81,8 @@ export function Pillars() {
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {PILLARS.map((p) => (
-            <a
-              key={p.title}
-              href={p.href}
+            <div key={p.title}
+
               className="group relative block bg-white border border-institutional-border border-l-[3px] border-l-gold-500 hover:border-gold-400 rounded-xl p-8 h-full transition-all hover:shadow-xl hover:-translate-y-1"
             >
               <div
@@ -121,24 +120,8 @@ export function Pillars() {
                 ))}
               </ul>
 
-              <span className="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700 group-hover:gap-2.5 transition-all">
-                Learn more
-                <svg
-                  className="w-3.5 h-3.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-            </a>
+
+            </div>
           ))}
         </div>
       </div>

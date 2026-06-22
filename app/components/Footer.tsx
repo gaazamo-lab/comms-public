@@ -63,7 +63,7 @@ export function Footer() {
               </div>
             </div>
             <p className="mt-6 text-sm text-white/60 leading-relaxed max-w-sm">
-              The Communications, Comms &amp; Partnerships Directorate is one
+              The Corporate Communications and Partnerships Directorate is one
               of the operating directorates of CLET, established under the
               Legal Education Act, 2026 (Act 1170).
             </p>

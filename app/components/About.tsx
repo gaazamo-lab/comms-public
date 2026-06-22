@@ -29,7 +29,7 @@ export function About() {
               <p className="text-base sm:text-lg text-navy-800 leading-[1.7] font-medium">
                 The{" "}
                 <strong className="text-navy-950 font-bold underline decoration-gold-400 decoration-2 underline-offset-4">
-                  Communications, Comms &amp; Partnerships (CCP) Directorate
+                  Corporate Communications and Partnerships (CCP) Directorate
                 </strong>{" "}
                 is one of the operating directorates of the Council for Legal
                 Education and Training (CLET), the national regulatory and

@@ -19,7 +19,7 @@ export function Leadership() {
               
               <Image
                 src="/images/FranciscaKakraForson.jpg"
-                alt="Ms. Francisca Kakra Forson — Head of Communications, Cooperation & Partnerships Directorate"
+                alt="Ms. Francisca Kakra Forson — Head of Corporate Communications and Partnerships Directorate"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -62,14 +62,14 @@ export function Leadership() {
                 Ms. Francisca Kakra Forson
               </h2>
               <p className="text-lg font-medium text-navy-700 mt-2">
-                Head of Communications, Cooperation &amp; Partnerships
+                Head of Corporate Communications and Partnerships
               </p>
               <div className="h-0.5 w-20 bg-gold-500 mt-4" />
             </div>
 
             <div className="space-y-4 text-[15px] sm:text-base text-navy-700 leading-[1.75]">
               <p>
-                Ms. Francisca Kakra Forson leads the Communications, Cooperation &amp; Partnerships (CCP) Directorate, bringing strategic direction to CLET&apos;s internal and external engagements. She oversees the Directorate&apos;s core units, ensuring a unified and prestigious voice for the Council.
+                Ms. Francisca Kakra Forson leads the Corporate Communications and Partnerships (CCP) Directorate, bringing strategic direction to CLET&apos;s internal and external engagements. She oversees the Directorate&apos;s core units, ensuring a unified and prestigious voice for the Council.
               </p>
               <p>
                 Under her leadership, the Directorate manages the statutory information flow, shapes diplomatic protocols, and fosters bilateral relations with regional and international legal education bodies.

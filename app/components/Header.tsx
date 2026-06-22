@@ -30,7 +30,7 @@ export function Header() {
             <Link
               href="/"
               className="flex items-center gap-3 shrink-0"
-              aria-label="Communications, Comms & Partnerships Directorate — Home"
+              aria-label="Corporate Communications and Partnerships Directorate — Home"
             >
               <Image
                 src="/logos/CLET CCP Logo .png"
@@ -41,11 +41,11 @@ export function Header() {
                 priority
               />
               <div className="hidden sm:block">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-gold-600 font-semibold leading-none">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-gold-600 font-semibold leading-none">
                   CLET Ghana
                 </p>
                 <p className="text-sm font-heading font-bold text-navy-900 leading-tight mt-1">
-                  Communications, Comms &amp; Partnerships
+                  Corporate Communications and Partnerships
                 </p>
               </div>
             </Link>

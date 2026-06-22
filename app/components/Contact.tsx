@@ -67,7 +67,7 @@ export function Contact() {
               <address className="not-italic mt-3 text-sm text-navy-900 leading-relaxed">
                 <strong>Council for Legal Education and Training</strong>
                 <br />
-                Communications, Comms &amp; Partnerships Directorate
+                Corporate Communications and Partnerships Directorate
                 <br />
                 Accra, Greater Accra Region
                 <br />
