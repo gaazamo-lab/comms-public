@@ -12,7 +12,7 @@ export function Hero() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/10 via-navy-900/10 to-navy-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/80 via-navy-900/80 to-navy-950/80" />
       </div>
 
       <div className="absolute inset-0 pointer-events-none -z-10" aria-hidden="true">
@@ -23,7 +23,7 @@ export function Hero() {
 
       <div className="relative max-w-8xl mx-auto px-6 py-24 lg:py-32 w-full flex justify-start text-left">
         <div className="flex flex-col items-start p-8 sm:p-12 rounded-2xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-[1.4] sm:leading-[1.4] lg:leading-[1.3] tracking-tight animate-fade-up bg-black/60 backdrop-blur-md p-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-[1.4] sm:leading-[1.4] lg:leading-[1.3] tracking-tight animate-fade-up  p-4">
             The public voice of{" "}
             <span className="text-gold-400">Ghana&apos;s</span>
             <br />
@@ -31,7 +31,7 @@ export function Hero() {
           </h1>
 
 
-          <p className=" mt-4 text-white! font-[450] text-lg sm:text-sm lg:text-sm font-sans leading-relaxed max-w-2xl mb-10 animate-fade-up delay-200 bg-black/60 backdrop-blur-md p-4">
+          <p className=" mt-4 text-white! font-[450] text-lg sm:text-sm lg:text-sm font-sans leading-relaxed max-w-2xl mb-10 animate-fade-up delay-200  p-4">
             We are the trusted bridge between the Council for Legal Education
             and Training and the citizens, students, institutions, partners and
             international community it serves under the Legal Education Act,
