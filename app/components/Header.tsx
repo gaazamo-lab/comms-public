@@ -32,10 +32,14 @@ export function Header() {
                 />
               </div>
               <div className="hidden sm:block">
-                
-                <p className="text-base font-heading font-bold text-navy-800 leading-tight mt-1">
-                   CCP CLET
-                </p>
+                <div className="text-gold-500 font-serif  text-[12px] leading-tight tracking-tight">
+                  CLET GHANA
+                </div>
+               
+                <div className="text-navy-800 font-serif font-bold text-sm leading-tight tracking-tight">
+                 Corporate Communications <br/> and Partnerships
+                </div>
+               
               </div>
             </Link>
 
@@ -54,7 +58,7 @@ export function Header() {
               </ul>
             </nav>
 
-            <a href="#contact" className="hidden md:inline-flex button-gold px-4 py-2 text-sm">
+            <a href="#contact" className="hidden md:inline-flex button-gold px-4 py-2! text-sm!">
               Contact CCP
             </a>
           </div>
