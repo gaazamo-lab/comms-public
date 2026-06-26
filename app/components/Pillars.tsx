@@ -63,7 +63,7 @@ export function Pillars() {
         }}
         aria-hidden="true"
       />
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-8xl mx-auto px-6">
         <div className="max-w-3xl">
           <p className="text-[11px] uppercase tracking-[0.25em] text-gold-600 font-semibold">
             Our Pillars
@@ -83,10 +83,10 @@ export function Pillars() {
           {PILLARS.map((p) => (
             <div key={p.title}
 
-              className="group relative block bg-white border border-institutional-border border-l-[3px] border-l-gold-500 hover:border-gold-400 rounded-xl p-8 h-full transition-all hover:shadow-xl hover:-translate-y-1"
+              className="group card  relative block p-8 h-full"
             >
               <div
-                className={`relative w-full h-32 rounded-lg bg-gradient-to-br ${p.accent} mb-6 flex items-center justify-center overflow-hidden`}
+                className={`relative w-full h-32  bg-linear-to-br  border-b mb-6 flex items-center justify-center overflow-hidden`}
               >
                 <Image
                   src={p.symbol}
@@ -95,7 +95,6 @@ export function Pillars() {
                   height={120}
                   className="w-20 h-20 object-contain opacity-90 group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute bottom-3 left-4 w-10 h-1 bg-gold-500 rounded-full" />
               </div>
 
               <p className="text-[10px] uppercase tracking-[0.25em] text-gold-600 font-semibold">
@@ -114,7 +113,7 @@ export function Pillars() {
                     key={b}
                     className="flex items-start gap-2 text-[13px] text-navy-700"
                   >
-                    <span className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0" />
+                    <span className="mt-2 inline-block w-2 h-2 bg-navy-700 shrink-0" />
                     {b}
                   </li>
                 ))}

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Merriweather, Source_Sans_3 } from "next/font/google";
+import { Lato, Roboto_Serif } from "next/font/google";
 import "./globals.css";
 
-const merriweather = Merriweather({
-  variable: "--font-merriweather",
+const robotoSerif = Roboto_Serif({
+  variable: "--font-roboto-serif",
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const lato = Lato({
+  variable: "--font-lato",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "700", "900"],
   display: "swap",
 });
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${merriweather.variable} ${sourceSans.variable} h-full antialiased`}
+      className={`${robotoSerif.variable} ${lato.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-navy-900">
         {children}

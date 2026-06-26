@@ -45,7 +45,7 @@ export function Contact() {
         className="absolute -top-16 -right-16 w-72 h-72 opacity-[0.07]"
       />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-8xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="text-[11px] uppercase tracking-[0.25em] text-gold-600 font-semibold">
@@ -60,7 +60,7 @@ export function Contact() {
               Monday to Friday, 08:30 – 17:00 GMT.
             </p>
 
-            <div className="mt-8 bg-white border border-institutional-border rounded-xl p-6">
+            <div className="mt-8 card p-6">
               <p className="text-[10px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
                 Head Office
               </p>
@@ -112,7 +112,7 @@ export function Contact() {
               {CONTACTS.map((c) => (
                 <article
                   key={c.label}
-                  className="bg-white border border-institutional-border border-l-[3px] border-l-gold-500 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                  className="card  p-6"
                 >
                   <p className="text-[10px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
                     {c.label}
@@ -166,23 +166,7 @@ export function Contact() {
               ))}
             </div>
 
-            <div className="mt-8 bg-navy-900 text-white rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between">
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-gold-300 font-semibold">
-                  After-hours press emergencies
-                </p>
-                <p className="mt-2 text-base sm:text-lg font-heading">
-                  Crisis-comms duty line:{" "}
-                  <span className="text-gold-300">+233 (0) 302 000 911</span>
-                </p>
-              </div>
-              <a
-                href="mailto:duty.press@clet.gov.gh"
-                className="inline-flex items-center justify-center gap-2 bg-gold-500 text-navy-900 px-5 py-3 text-sm font-semibold hover:bg-gold-400 transition-colors"
-              >
-                duty.press@clet.gov.gh
-              </a>
-            </div>
+           
           </div>
         </div>
       </div>

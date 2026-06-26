@@ -21,7 +21,7 @@ export function Partnerships() {
       id="partnerships"
       className="relative bg-white py-24 sm:py-28 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-8xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-5">
             <p className="text-[11px] uppercase tracking-[0.25em] text-gold-600 font-semibold">
@@ -44,20 +44,20 @@ export function Partnerships() {
                 height={140}
                 className="absolute -bottom-6 -right-6 w-36 h-36 opacity-20"
               />
-              <p className="text-[10px] uppercase tracking-[0.25em] text-gold-300 font-semibold">
+              <p className="text-[10px] uppercase tracking-[0.25em] text-white! font-semibold">
                 Partner with CCP
               </p>
               <h3 className="mt-3 text-2xl font-heading font-bold text-white leading-snug">
                 Propose an MOU, joint event or research collaboration.
               </h3>
-              <p className="mt-4 text-sm text-white/70 leading-relaxed">
+              <p className="mt-4 text-sm text-white/70! leading-relaxed">
                 Strategic Partnerships handles MOU lifecycle, joint
                 programming, donor engagement, public consultation and
                 stakeholder convening across the legal education sector.
               </p>
               <a
                 href="#contact"
-                className="relative mt-6 inline-flex items-center gap-2 bg-gold-500 text-navy-900 px-5 py-3 text-sm font-semibold hover:bg-gold-400 transition-colors"
+                 className="inline-flex w-fit items-center gap-2 rounded-full px-7 py-2 mt-3 text-[12px] font-semibold transition-colors duration-300 bg-gold-400  text-white hover:bg-primary"
               >
                 Start a conversation
                 <svg
@@ -95,7 +95,7 @@ export function Partnerships() {
               id="newsroom"
               className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4"
             >
-              <article className="group bg-institutional-bg border border-institutional-border rounded-xl p-6 hover:border-gold-400 transition-colors">
+              <article className="group card bg-institutional-bg p-6">
                 <p className="text-[10px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
                   Newsroom
                 </p>
@@ -107,11 +107,11 @@ export function Partnerships() {
                   examination notices and accreditation announcements will be
                   published here from vesting day, 1 July 2026.
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-gold-700 group-hover:gap-2.5 transition-all">
+                <span     className="inline-flex w-fit items-center gap-2 rounded-full px-7 py-2 mt-2 text-[12px] font-semibold transition-colors duration-300 bg-[#1A1A1A] text-white hover:bg-primary">
                   Coming July 2026 →
                 </span>
               </article>
-              <article className="group bg-institutional-bg border border-institutional-border rounded-xl p-6 hover:border-gold-400 transition-colors">
+              <article className="group card bg-institutional-bg p-6">
                 <p className="text-[10px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
                   Media Resources
                 </p>

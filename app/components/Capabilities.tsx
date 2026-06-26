@@ -4,7 +4,7 @@ const CAPABILITY_GROUPS = [
   {
     title: "Public Information & Brand",
     description:
-      "How CLET speaks to the public, the profession and the press — coherently and at scale.",
+      "How CLET speaks to the public, the profession and the press —coherently and at scale.",
     symbol: "/Adinkra Symbols/Gold/Hwemudua (gold).png",
     symbolAlt: "Hwemudua — symbol of examination, quality control and integrity",
     items: [
@@ -113,24 +113,24 @@ export function Capabilities() {
         <div className="absolute -bottom-32 left-0 w-[600px] h-[600px] bg-navy-700/40 rounded-full blur-[150px]" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-8xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 max-w-5xl">
           <div>
-            <p className="text-[11px] uppercase tracking-[0.25em] text-gold-400 font-semibold">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-white! font-semibold">
               Capabilities
             </p>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-heading font-bold leading-tight">
               A 20-system communications backbone for the entire CLET ecosystem.
             </h2>
           </div>
-          <p className="text-white/65 text-base sm:text-lg max-w-md leading-relaxed">
+          <p className="text-white! text-base sm:text-lg max-w-md leading-relaxed">
             Cluster C6 is the only cluster whose systems serve every other
             cluster simultaneously — from accreditation to examinations to
             compliance.
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10">
           {CAPABILITY_GROUPS.map((g) => (
             <article
               key={g.title}
@@ -148,17 +148,17 @@ export function Capabilities() {
                   className="w-10 h-10 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all"
                 />
               </div>
-              <p className="mt-3 text-sm text-white/65 leading-relaxed">
+              <p className="mt-3 text-sm text-white/65! leading-relaxed">
                 {g.description}
               </p>
               <ul className="mt-5 space-y-2.5">
                 {g.items.map((it) => (
                   <li
                     key={it}
-                    className="flex items-start gap-2.5 text-[13px] text-white/85"
+                    className="flex items-start gap-2.5 text-[13px] text-white!"
                   >
                     <svg
-                      className="w-3.5 h-3.5 mt-1 shrink-0 text-gold-400"
+                      className="w-3.5 h-3.5 mt-1 shrink-0 text-white!"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                       aria-hidden="true"
