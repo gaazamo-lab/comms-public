@@ -2,79 +2,83 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative isolate min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 -z-10">
+    <section className="hero">
+      <div className="hero__bg">
         <Image
           src="/images/GSL_IMAGE.png"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="hero__img kenburns"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/80 via-navy-900/80 to-navy-950/80" />
+        <div className="hero__overlay" />
+        <div className="hero__blur hero__blur--gold float-orb" />
+        <div className="hero__blur hero__blur--navy float-orb float-orb--slow" />
+        <div className="hero__blur hero__blur--soft" />
       </div>
 
-      <div className="absolute inset-0 pointer-events-none -z-10" aria-hidden="true">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gold-500/15 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-navy-600/40 rounded-full blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/[0.06] rounded-full blur-[200px]" />
-      </div>
+      <div className="container hero__inner">
+        <div className="hero__lead">
+          <span className="hero__eyebrow-wrap">
+            <Image
+              src="/logos/CLET CCP Logo .png"
+              alt=""
+              width={56}
+              height={56}
+              className="hero__seal"
+              priority
+            />
+            <span className="hero__divider" />
+            <span className="hero__eyebrow">
+              Corporate Communications and Partnerships
+            </span>
+          </span>
 
-      <div className="relative max-w-8xl mx-auto px-6 py-24 lg:py-32 w-full flex justify-start text-left">
-        <div className="flex flex-col items-start p-8 sm:p-12 rounded-2xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-[1.4] sm:leading-[1.4] lg:leading-[1.3] tracking-tight animate-fade-up  p-4">
-            The public voice of{" "}
-            <span className="text-gold-400">Ghana&apos;s</span>
+          <h1 className="hero__title">
+            The public voice of
             <br />
-            <span className="text-gold-400">legal education</span> ecosystem.
+            <span className="accent">Ghana&apos;s legal education</span>
+            <br />
+            ecosystem.
           </h1>
 
-
-          <p className=" mt-4 text-white! font-[450] text-lg sm:text-sm lg:text-sm font-sans leading-relaxed max-w-2xl mb-10 animate-fade-up delay-200  p-4">
+          <p className="hero__subtitle">
             We are the trusted bridge between the Council for Legal Education
             and Training and the citizens, students, institutions, partners and
             international community it serves under the Legal Education Act,
             2026.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-16 mt-8 animate-fade-up delay-300 justify-center">
-            <a
-              href="#pillars"
-              className="group button-gold w-full sm:w-auto border border-gold-500"
-            >
+          <div className="hero__actions">
+            <a href="#pillars" className="btn btn--primary">
               Explore our work
               <svg
-                className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                fill="none"
+                className="arrow"
+                width="16"
+                height="16"
                 viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 aria-hidden="true"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a
-              href="#contact"
-              className="button-outline-white button-white w-full sm:w-auto backdrop-blur-md"
-            >
+            <a href="#contact" className="btn btn--outline">
               Contact the directorate
             </a>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-white/30 text-[10px] uppercase tracking-[0.3em]">
-          Scroll
-        </span>
-        <div className="w-px h-8 bg-gradient-to-b from-white/40 to-transparent" />
-      </div>
+      {/* <div className="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div className="hero__scroll-line" />
+      </div> */}
     </section>
   );
 }

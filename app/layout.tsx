@@ -1,20 +1,6 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
-import { Lato, Roboto_Serif } from "next/font/google";
 import "./globals.css";
-
-const robotoSerif = Roboto_Serif({
-  variable: "--font-roboto-serif",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-
-const lato = Lato({
-  variable: "--font-lato",
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title:
@@ -37,13 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${robotoSerif.variable} ${lato.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-white text-navy-900">
-        {children}
-      </body>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Serif:opsz,wght@8..144,500;8..144,600;8..144,700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

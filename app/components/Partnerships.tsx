@@ -17,115 +17,75 @@ const PARTNERS = [
 
 export function Partnerships() {
   return (
-    <section
-      id="partnerships"
-      className="relative bg-white py-24 sm:py-28 overflow-hidden"
-    >
-      <div className="max-w-8xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          <div className="lg:col-span-5">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-gold-600 font-semibold">
-              Partnerships & Engagement
-            </p>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-navy-900 leading-tight">
-              Convening the institutions of Ghana&apos;s legal community.
-            </h2>
-            <p className="mt-6 text-base sm:text-lg text-institutional-muted leading-relaxed">
-              CCP maintains the institutional relationship portfolio of CLET —
-              from the Judiciary and the Bar to accredited universities,
-              ministries, donors and the international legal community.
-            </p>
+    <section id="partnerships" className="section">
+      <div className="container featured__grid">
+        <div>
+          <p className="eyebrow">Partnerships & Engagement</p>
+          <h2>Convening the institutions of Ghana&apos;s legal community.</h2>
+          <p>
+            CCP maintains the institutional relationship portfolio of CLET —
+            from the Judiciary and the Bar to accredited universities,
+            ministries, donors and the international legal community.
+          </p>
 
-            <div className="mt-8 relative bg-navy-900 rounded-2xl p-8 overflow-hidden">
-              <Image
-                src="/Adinkra Symbols/Gold/Nkyimu Gold.png"
-                alt=""
-                width={140}
-                height={140}
-                className="absolute -bottom-6 -right-6 w-36 h-36 opacity-20"
-              />
-              <p className="text-[10px] uppercase tracking-[0.25em] text-white! font-semibold">
-                Partner with CCP
-              </p>
-              <h3 className="mt-3 text-2xl font-heading font-bold text-white leading-snug">
-                Propose an MOU, joint event or research collaboration.
-              </h3>
-              <p className="mt-4 text-sm text-white/70! leading-relaxed">
-                Strategic Partnerships handles MOU lifecycle, joint
-                programming, donor engagement, public consultation and
-                stakeholder convening across the legal education sector.
-              </p>
-              <a
-                href="#contact"
-                 className="inline-flex w-fit items-center gap-2 rounded-full px-7 py-2 mt-3 text-[12px] font-semibold transition-colors duration-300 bg-gold-400  text-white hover:bg-primary"
+          <div className="partner-card">
+          
+            <h3>Propose an MOU, joint event or research collaboration.</h3>
+            <p>
+              Strategic Partnerships handles MOU lifecycle, joint programming,
+              donor engagement, public consultation and stakeholder convening
+              across the legal education sector.
+            </p>
+            <a href="#contact" className="btn btn--primary">
+              Start a conversation
+              <svg
+                className="arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
               >
-                Start a conversation
-                <svg
-                  className="w-3.5 h-3.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-            </div>
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="partner-grid">
+            {PARTNERS.map((partner) => (
+              <div className="partner-item" key={partner}>
+                <span />
+                <span>{partner}</span>
+              </div>
+            ))}
           </div>
 
-          <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-institutional-border border border-institutional-border rounded-xl overflow-hidden">
-              {PARTNERS.map((p) => (
-                <div
-                  key={p}
-                  className="bg-white p-5 flex items-center gap-3 hover:bg-institutional-bg transition-colors"
-                >
-                  <span className="inline-block w-2 h-2 bg-gold-500 shrink-0" />
-                  <span className="text-sm font-medium text-navy-900">{p}</span>
-                </div>
-              ))}
-            </div>
-
-            <div
-              id="newsroom"
-              className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4"
-            >
-              <article className="group card bg-institutional-bg p-6">
-                <p className="text-[10px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
-                  Newsroom
-                </p>
-                <h4 className="mt-3 text-lg font-heading font-bold text-navy-900">
-                  Press releases, statements and announcements
-                </h4>
-                <p className="mt-3 text-sm text-institutional-muted leading-relaxed">
-                  Official CLET press materials, Director-General statements,
-                  examination notices and accreditation announcements will be
-                  published here from vesting day, 1 July 2026.
-                </p>
-                <span     className="inline-flex w-fit items-center gap-2 rounded-full px-7 py-2 mt-2 text-[12px] font-semibold transition-colors duration-300 bg-[#1A1A1A] text-white hover:bg-primary">
-                  Coming July 2026 →
-                </span>
-              </article>
-              <article className="group card bg-institutional-bg p-6">
-                <p className="text-[10px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
-                  Media Resources
-                </p>
-                <h4 className="mt-3 text-lg font-heading font-bold text-navy-900">
-                  Logos, biographies and brand assets
-                </h4>
-                <p className="mt-3 text-sm text-institutional-muted leading-relaxed">
-                  Approved CLET and CCP brand assets, leadership biographies,
-                  Director-General photography and the institutional brand book
-                  available on request from the press desk.
-                </p>
-
-              </article>
-            </div>
+          <div id="newsroom" className="news-grid">
+            <article className="stat-card">
+              <p className="eyebrow">Newsroom</p>
+              <h3>Press releases, statements and announcements</h3>
+              <p className="pillar__text">
+                Official CLET press materials, Director-General statements,
+                examination notices and accreditation announcements will be
+                published here from vesting day, 1 July 2026.
+              </p>
+              <span className="tag">Coming July 2026</span>
+            </article>
+            <article className="stat-card">
+              <p className="eyebrow">Media Resources</p>
+              <h3>Logos, biographies and brand assets</h3>
+              <p className="pillar__text">
+                Approved CLET and CCP brand assets, leadership biographies,
+                Director-General photography and the institutional brand book
+                available on request from the press desk.
+              </p>
+            </article>
           </div>
         </div>
       </div>

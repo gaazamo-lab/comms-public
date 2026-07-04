@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FOOTER_NAV = [
   {
@@ -13,14 +14,13 @@ const FOOTER_NAV = [
   {
     title: "Engagement",
     links: [
-      // { label: "Press Desk", href: "#contact" },
       { label: "Partnerships", href: "#partnerships" },
       { label: "International & Protocol", href: "#contact" },
       { label: "Public Consultations", href: "#partnerships" },
     ],
   },
   {
-    title: "CLET",
+    title: "Institution",
     links: [
       { label: "Council for Legal Education and Training", href: "#" },
       { label: "Legal Education Act, 2026", href: "#" },
@@ -32,89 +32,56 @@ const FOOTER_NAV = [
 
 export function Footer() {
   return (
-    <footer className="relative bg-navy-900 text-white!">
-      <div className="h-1 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600" />
-      <div
-        className="absolute inset-0 opacity-[0.04] pointer-events-none"
-        style={{
-          backgroundImage:
-            "url('/Adinkra Symbols/Gold/ADINKRA BACKGROUND Gold.png')",
-          backgroundSize: "380px",
-        }}
-        aria-hidden="true"
-      />
-      <div className="relative max-w-8xl mx-auto px-6 pt-16 pb-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-white! border border-gold-500/40 flex items-center justify-center shrink-0 overflow-hidden">
-                <Image
-                  src="/logos/CLET logo.png"
-                  alt="Council for Legal Education and Training emblem"
-                  width={48}
-                  height={48}
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-white! font-semibold">
-                  Republic of Ghana
-                </p>
-                <p className="text-sm font-heading font-bold text-white! leading-tight mt-1">
-                  Council for Legal Education and Training
-                </p>
-              </div>
-            </div>
-            <p className="mt-6 text-sm text-white/60! leading-relaxed max-w-sm">
-              The Corporate Communications and Partnerships Directorate is one
-              of the operating directorates of CLET, established under the
-              Legal Education Act, 2026 (Act 1170).
-            </p>
-            <div className="mt-6 flex items-center gap-3">
-              <Image
-                src="/logos/CLET CCP Logo .png"
-                alt="CLET CCP Directorate emblem"
-                width={44}
-                height={44}
-                className="h-10 w-auto"
-              />
-              <span className="text-[11px] uppercase tracking-[0.25em] text-gold-400 font-semibold">
-                CCP Directorate
+    <footer className="site-footer">
+      <div className="container footer-top">
+        <div>
+          <Link href="/" className="footer-brand">
+            <Image
+              src="/logos/CLET logo.png"
+              alt=""
+              width={56}
+              height={56}
+              className="seal"
+            />
+            <span>
+              <span className="footer-eyebrow">CLET Ghana</span>
+              <span className="footer-title">
+                Corporate Communications
+                <br />
+                and Partnerships
               </span>
-            </div>
-          </div>
-
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
-            {FOOTER_NAV.map((col) => (
-              <div key={col.title}>
-                <p className="text-[11px] uppercase tracking-[0.25em]  font-semibold text-white!">
-                  {col.title}
-                </p>
-                <ul className="mt-4 space-y-2.5">
-                  {col.links.map((link) => (
-                    <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-sm text-white/70! hover:text-gold-300 transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+            </span>
+          </Link>
+          <p className="muted" style={{ marginTop: "1.5rem", maxWidth: "24rem" }}>
+            The Corporate Communications and Partnerships Directorate is one of
+            the operating directorates of CLET, established under the Legal
+            Education Act, 2026 (Act 1170).
+          </p>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-between text-xs text-white!">
-          <p className="tracking-wide text-white!">
-            © {new Date().getFullYear()} Council for Legal Education and
-            Training, Republic of Ghana. All rights reserved.
-          </p>
-          <p className="tracking-wide text-white/70!">
-            Established under the Legal Education Act, 2026 · Act 1170
-          </p>
+        <div className="footer-grid">
+          {FOOTER_NAV.map((column) => (
+            <div key={column.title}>
+              <h4>{column.title}</h4>
+              <ul>
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <div className="container footer-bottom__inner">
+          <span>
+            &copy; {new Date().getFullYear()} Council for Legal Education and
+            Training, Republic of Ghana
+          </span>
+          <span className="muted">Legal Education Act, 2026 (Act 1170)</span>
         </div>
       </div>
     </footer>
