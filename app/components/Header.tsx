@@ -40,10 +40,9 @@ export function Header() {
               <span className="m-0 mt-px block text-[10px] font-semibold uppercase leading-none tracking-[0.2em] text-gold-600">
                 CLET Ghana
               </span>
-              <span className=" mt-2 block font-heading text-[0.9rem] font-bold leading-[1.1] text-navy-900">
-               
+              <span className="mt-2 block font-heading text-[0.9rem] font-bold leading-[1.1] text-navy-900 xl:whitespace-nowrap">
                 Corporate Communications
-                <br />
+                <br className="hidden" />
                 and Partnerships
               </span>
             </span>

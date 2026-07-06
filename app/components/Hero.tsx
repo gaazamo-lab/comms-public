@@ -38,9 +38,9 @@ export function Hero() {
           </span>
 
           <h1 className="m-0 font-heading text-[52px] font-bold leading-[1.3] tracking-normal text-white">
-            The public voice of
+            The Public Voice of
             <br />
-            <span className="text-gold-400">Ghana&apos;s Eegal Education</span>
+            <span className="text-gold-400">Ghana&apos;s Legal Education</span>
             <br />
             Ecosystem.
           </h1>

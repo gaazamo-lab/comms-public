@@ -42,7 +42,7 @@ export function Leadership() {
             />
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(10,22,40,0.65),transparent_60%)]" />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 p-8">
-              <p className={cn(eyebrow, eyebrowLight)}>CLET Ghana</p>
+            
               <p className="mt-2 font-heading text-xl font-bold leading-snug text-white">
                 Ms. Francisca Kakra Forson
                 <br />
