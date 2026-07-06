@@ -37,11 +37,11 @@ export function Header() {
               priority
             />
             <span className="hidden sm:block">
-              <span className="m-0 block text-[10px] font-semibold uppercase leading-none tracking-[0.2em] text-gold-600">
+              <span className="m-0 mt-px block text-[10px] font-semibold uppercase leading-none tracking-[0.2em] text-gold-600">
                 CLET Ghana
               </span>
-              <span className="mt-px block font-heading text-[0.9rem] font-bold leading-[1.1] text-navy-900">
-                <br />
+              <span className=" mt-2 block font-heading text-[0.9rem] font-bold leading-[1.1] text-navy-900">
+               
                 Corporate Communications
                 <br />
                 and Partnerships
