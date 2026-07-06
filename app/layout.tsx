@@ -32,7 +32,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body className="flex min-h-screen flex-col bg-white font-sans text-base leading-[1.7] text-navy-700 antialiased">
+        {children}
+      </body>
     </html>
   );
 }

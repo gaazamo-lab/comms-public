@@ -1,4 +1,16 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import {
+  card,
+  cardText,
+  container,
+  eyebrow,
+  imageZoom,
+  section,
+  sectionAlt,
+  sectionHeading,
+  subtitle,
+} from "./styles";
 
 const PILLARS = [
   {
@@ -44,11 +56,13 @@ const PILLARS = [
 
 export function Pillars() {
   return (
-    <section id="pillars" className="section section--alt">
-      <div className="container">
-        <header className="section-heading section-heading--center">
-          <h2>Three units. One mandate to inform, engage and represent.</h2>
-          <p className="subtitle">
+    <section id="pillars" className={cn(section, sectionAlt)}>
+      <div className={container}>
+        <header className={sectionHeading}>
+          <h2 className="mt-3 font-heading text-[clamp(1.75rem,3vw,2.5rem)] font-bold leading-tight text-navy-900">
+            Three units. One mandate to inform, engage and represent.
+          </h2>
+          <p className={subtitle}>
             The CCP Directorate is formally constituted in the CLET organogram
             with three operational units. Together they own the institution&apos;s
             public face, diplomatic engagement and external relationship
@@ -56,27 +70,40 @@ export function Pillars() {
           </p>
         </header>
 
-        <div className="grid grid--3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((pillar) => (
-            <a href={pillar.href} className="pillar" key={pillar.title}>
-              <div className="pillar__image zoom-img">
+            <a
+              href={pillar.href}
+              className={cn(card, "group block text-inherit hover:text-inherit")}
+              key={pillar.title}
+            >
+              <div className={cn(imageZoom, "mb-6 aspect-[16/10] rounded-lg")}>
                 <Image
                   src={pillar.image}
                   alt=""
                   fill
                   sizes="(max-width: 900px) 100vw, 33vw"
+                  className="h-full w-full object-cover"
                 />
-                <div className="pillar__image-overlay" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,22,40,0)_40%,rgba(10,22,40,0.45)_100%)]" />
               </div>
-              <p className="eyebrow">{pillar.eyebrow}</p>
-              <h3 className="pillar__title">{pillar.title}</h3>
-              <p className="pillar__text">{pillar.description}</p>
-              <ul className="dot-list">
+              <p className={eyebrow}>{pillar.eyebrow}</p>
+              <h3 className="mb-3 mt-3 font-heading text-[1.15rem] font-bold leading-tight text-navy-900 transition-colors duration-200 group-hover:text-gold-600">
+                {pillar.title}
+              </h3>
+              <p className={cn(cardText, "mb-5")}>{pillar.description}</p>
+              <ul className="mb-5 flex list-none flex-col gap-4 p-0">
                 {pillar.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
+                  <li
+                    className="flex items-center gap-3 text-[0.9rem] font-medium text-navy-800"
+                    key={bullet}
+                  >
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                    {bullet}
+                  </li>
                 ))}
               </ul>
-              <span className="pillar__link">
+              <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-gold-600 transition-[gap,color] duration-200 group-hover:gap-2.5 group-hover:text-gold-700">
                 Learn more
                 <svg
                   width="14"

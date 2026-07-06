@@ -1,4 +1,6 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
+import { card, cardText, container, eyebrow, section, twoColumn } from "./styles";
 
 const PARTNERS = [
   "The Judiciary of Ghana",
@@ -17,29 +19,32 @@ const PARTNERS = [
 
 export function Partnerships() {
   return (
-    <section id="partnerships" className="section">
-      <div className="container featured__grid">
+    <section id="partnerships" className={section}>
+      <div className={cn(container, twoColumn)}>
         <div>
-          <p className="eyebrow">Partnerships & Engagement</p>
-          <h2>Convening the institutions of Ghana&apos;s legal community.</h2>
-          <p>
+          <p className={eyebrow}>Partnerships & Engagement</p>
+          <h2 className="mb-6 mt-3 font-heading text-[clamp(1.75rem,3vw,2.5rem)] font-bold leading-tight text-navy-900">
+            Convening the institutions of Ghana&apos;s legal community.
+          </h2>
+          <p className="mb-4 leading-[1.7] text-navy-500">
             CCP maintains the institutional relationship portfolio of CLET —
             from the Judiciary and the Bar to accredited universities,
             ministries, donors and the international legal community.
           </p>
 
-          <div className="partner-card">
-          
-            <h3>Propose an MOU, joint event or research collaboration.</h3>
-            <p>
+          <div className="relative mt-8 overflow-hidden rounded-xl bg-navy-900 p-8">
+            <h3 className="relative mt-3 font-heading text-2xl font-bold leading-tight text-white">
+              Propose an MOU, joint event or research collaboration.
+            </h3>
+            <p className="relative mb-4 text-[0.9rem] leading-relaxed text-white/70">
               Strategic Partnerships handles MOU lifecycle, joint programming,
               donor engagement, public consultation and stakeholder convening
               across the legal education sector.
             </p>
-            <a href="#contact" className="btn btn--primary">
+            <Button href="#contact" variant="gold" size="md" className="group">
               Start a conversation
               <svg
-                className="arrow"
+                className="motion-safe:transition-transform motion-safe:group-hover:translate-x-1"
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
@@ -52,35 +57,46 @@ export function Partnerships() {
               >
                 <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </Button>
           </div>
         </div>
 
         <div>
-          <div className="partner-grid">
+          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-navy-800/10 bg-navy-800/10 sm:grid-cols-2">
             {PARTNERS.map((partner) => (
-              <div className="partner-item" key={partner}>
-                <span />
-                <span>{partner}</span>
+              <div
+                className="flex items-center gap-3 bg-white p-5 transition-colors duration-150 hover:bg-parchment"
+                key={partner}
+              >
+                <span className="h-2 w-2 shrink-0 bg-gold-500" />
+                <span className="text-[0.9rem] font-medium text-navy-900">
+                  {partner}
+                </span>
               </div>
             ))}
           </div>
 
-          <div id="newsroom" className="news-grid">
-            <article className="stat-card">
-              <p className="eyebrow">Newsroom</p>
-              <h3>Press releases, statements and announcements</h3>
-              <p className="pillar__text">
+          <div id="newsroom" className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <article className={card}>
+              <p className={eyebrow}>Newsroom</p>
+              <h3 className="mb-3 mt-3 font-heading text-[1.15rem] font-bold leading-tight text-navy-900">
+                Press releases, statements and announcements
+              </h3>
+              <p className={cn(cardText, "mb-4")}>
                 Official CLET press materials, Director-General statements,
                 examination notices and accreditation announcements will be
                 published here from vesting day, 1 July 2026.
               </p>
-              <span className="tag">Coming July 2026</span>
+              <span className="inline-block rounded-full bg-gold-500/15 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.03em] text-gold-700">
+                Coming July 2026
+              </span>
             </article>
-            <article className="stat-card">
-              <p className="eyebrow">Media Resources</p>
-              <h3>Logos, biographies and brand assets</h3>
-              <p className="pillar__text">
+            <article className={card}>
+              <p className={eyebrow}>Media Resources</p>
+              <h3 className="mb-3 mt-3 font-heading text-[1.15rem] font-bold leading-tight text-navy-900">
+                Logos, biographies and brand assets
+              </h3>
+              <p className={cardText}>
                 Approved CLET and CCP brand assets, leadership biographies,
                 Director-General photography and the institutional brand book
                 available on request from the press desk.

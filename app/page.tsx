@@ -7,6 +7,15 @@ import { Capabilities } from "./components/Capabilities";
 import { Partnerships } from "./components/Partnerships";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { cn } from "@/lib/utils";
+import { container } from "./components/styles";
+
+const STATS = [
+  ["01", "Apex Legal Education Council"],
+  ["2026", "Legal Education Act"],
+  ["03", "Operational CCP Units"],
+  ["20", "Communications Systems"],
+];
 
 export default function Home() {
   return (
@@ -14,25 +23,27 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <section className="stats">
-          <div className="container">
-            <div className="stats__grid">
-              <div className="stat">
-                <p className="stat__num">01</p>
-                <p className="stat__label">Apex Legal Education Council</p>
-              </div>
-              <div className="stat">
-                <p className="stat__num">2026</p>
-                <p className="stat__label">Legal Education Act</p>
-              </div>
-              <div className="stat">
-                <p className="stat__num">03</p>
-                <p className="stat__label">Operational CCP Units</p>
-              </div>
-              <div className="stat">
-                <p className="stat__num">20</p>
-                <p className="stat__label">Communications Systems</p>
-              </div>
+        <section className="border-b border-navy-800/10 bg-white">
+          <div className={container}>
+            <div className="grid grid-cols-2 lg:grid-cols-4">
+              {STATS.map(([value, label], index) => (
+                <div
+                  className={cn(
+                    "border-navy-800/10 px-5 py-10 text-center",
+                    index !== STATS.length - 1 && "border-r",
+                    index === 1 && "max-lg:border-r-0",
+                    index < 2 && "max-lg:border-b"
+                  )}
+                  key={label}
+                >
+                  <p className="m-0 font-heading text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-navy-900">
+                    {value}
+                  </p>
+                  <p className="mt-2 text-xs uppercase tracking-[0.1em] text-navy-500">
+                    {label}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
