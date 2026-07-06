@@ -12,12 +12,12 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="absolute inset-0 h-full w-full object-cover opacity-35 motion-safe:animate-ken-burns"
+          className="absolute inset-0 h-full w-full object-cover opacity-[.35] motion-safe:animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,22,40,0.8)_0%,rgba(15,30,58,0.8)_50%,rgba(10,22,40,0.8)_100%)]" />
-        <div className="pointer-events-none absolute left-[-8rem] top-1/4 h-96 w-96 rounded-full bg-gold-500/10 blur-[120px] motion-safe:animate-float-orb" />
-        <div className="pointer-events-none absolute bottom-1/4 right-0 h-[32rem] w-[32rem] rounded-full bg-[rgba(35,65,117,0.18)] blur-[120px] motion-safe:animate-float-orb-slow" />
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[50rem] w-[50rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold-500/5 blur-[200px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,22,40,0.88)_0%,rgba(15,30,58,0.82)_50%,rgba(10,22,40,0.95)_100%)]" />
+        <div className="pointer-events-none absolute left-[-8rem] top-1/4 h-96 w-96 rounded-full bg-[rgba(201,164,76,0.1)] blur-[120px] motion-safe:animate-float-orb" />
+        <div className="pointer-events-none absolute bottom-1/4 right-0 h-[32rem] w-[32rem] rounded-full bg-[rgba(35,65,117,0.3)] blur-[120px] motion-safe:animate-float-orb-slow" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[50rem] w-[50rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(201,164,76,0.05)] blur-[200px]" />
       </div>
 
       <div className={`${container} relative z-10 px-6 py-16 md:py-24`}>
