@@ -31,11 +31,12 @@ export function Hero() {
             />
             <span className="hero__divider" />
             <span className="hero__eyebrow">
-              Corporate Communications and Partnerships
+              CORPORATE COMMUNICATIONS AND PARTNERSHIPS DIRECTORATE
             </span>
           </span>
 
           <h1 className="hero__title">
+           
             The public voice of
             <br />
             <span className="accent">Ghana&apos;s legal education</span>
@@ -44,10 +45,8 @@ export function Hero() {
           </h1>
 
           <p className="hero__subtitle">
-            We are the trusted bridge between the Council for Legal Education
-            and Training and the citizens, students, institutions, partners and
-            international community it serves under the Legal Education Act,
-            2026.
+           The trusted bridge between the Council for Legal Education and Training and the citizens, students, institutions, partners, and international community it serves under the Legal Education Act, 2026 (Act 1170).
+
           </p>
 
           <div className="hero__actions">
