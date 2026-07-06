@@ -32,12 +32,12 @@ export function Hero() {
               priority
             />
             <span className="h-8 w-px bg-white/20" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-gold-400">
+            <span className="text-[12px] font-semibold uppercase tracking-[0.25em] text-gold-400">
               CORPORATE COMMUNICATIONS AND PARTNERSHIPS DIRECTORATE
             </span>
           </span>
 
-          <h1 className="m-0 font-heading text-[clamp(2.25rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-normal text-white">
+          <h1 className="m-0 font-heading text-[52px] font-bold leading-[1.3] tracking-normal text-white">
             The public voice of
             <br />
             <span className="text-gold-400">Ghana&apos;s Eegal Education</span>
@@ -45,7 +45,7 @@ export function Hero() {
             Ecosystem.
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-[1.65] text-white/60">
+          <p className="mb-10 mt-8 max-w-2xl font-sans text-[1.125rem] font-[450] leading-relaxed text-white/60 sm:text-[0.875rem] lg:text-[0.875rem]">
             The trusted bridge between the Council for Legal Education and
             Training and the citizens, students, institutions, partners, and
             international community it serves under the Legal Education Act,
