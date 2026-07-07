@@ -4,7 +4,7 @@ import { container } from "./styles";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[72vh] items-center overflow-hidden bg-navy-900 text-white sm:min-h-[85vh]">
+    <section className="relative isolate min-h-screen flex items-center overflow-hidden bg-navy-900 text-white">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/GSL_IMAGE.png"

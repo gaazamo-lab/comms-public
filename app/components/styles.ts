@@ -1,4 +1,4 @@
-export const container = "mx-auto w-full max-w-[1240px] px-6";
+export const container = "mx-auto w-full max-w-8xl px-12";
 
 export const section = "py-16 md:py-24";
 
