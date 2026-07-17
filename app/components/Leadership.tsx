@@ -34,11 +34,11 @@ export function Leadership() {
         <div className="grid gap-4">
           <div className={cn(imageZoom, "aspect-[5/4] rounded-xl")}>
             <Image
-              src="/images/pexels-photo.jpg"
+              src="/images/comms9.jpeg"
               alt="Ms. Francisca Kakra Forson, Head of Corporate Communications and Partnerships Directorate"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-fit"
             />
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(10,22,40,0.65),transparent_60%)]" />
             {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 p-8">
