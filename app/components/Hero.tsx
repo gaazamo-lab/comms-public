@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { HeroTypewriter } from "./HeroTypewriter";
 import { container } from "./styles";
 
 export function Hero() {
@@ -37,12 +38,17 @@ export function Hero() {
             </span>
           </span>
 
-          <h1 className="m-0 font-heading text-[52px] font-bold leading-[1.3] tracking-normal text-white">
-            The Public Voice of
-            <br />
-            <span className="text-gold-400">Ghana&apos;s Legal Education</span>
-            <br />
-            Ecosystem.
+          <h1
+            className="m-0 font-heading text-[30px] font-bold leading-[1.3] tracking-normal text-white md:text-[52px]"
+            aria-label="Mananging the corporate communications and partnaship for the legal eductaion in Ghana"
+          >
+            <span aria-hidden="true">
+              Mananging the
+              <br />
+              <HeroTypewriter />
+              <br />
+              for  legal eductaion in Ghana
+            </span>
           </h1>
 
           <p className="mb-10 mt-8 max-w-2xl font-sans text-[1.125rem] font-[450] leading-relaxed text-white/60 sm:text-[0.875rem] lg:text-[0.875rem]">

@@ -176,10 +176,38 @@
   }
 }
 
+.hero-typewriter {
+  display: inline-flex;
+  min-width: 14ch;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.hero-typewriter-cursor {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.9em;
+  margin-left: 0.08em;
+  background: currentColor;
+  transform: translateY(0.08em);
+  animation: hero-typewriter-cursor 0.75s step-end infinite;
+}
+
+@keyframes hero-typewriter-cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     scroll-behavior: auto !important;
+  }
+
+  .hero-typewriter-cursor {
+    animation: none;
+    opacity: 1;
   }
 }
