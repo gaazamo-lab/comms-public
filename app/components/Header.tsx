@@ -41,8 +41,8 @@ export function Header() {
                 CLET Ghana
               </span>
               <span className="mt-2 block font-heading text-[0.9rem] font-bold leading-[1.1] text-navy-900 xl:whitespace-nowrap">
-                Corporate Communications
-                <br className="hidden" />
+                Corporate Communications 
+             
                 and Partnerships
               </span>
             </span>
