@@ -47,7 +47,7 @@ export function Hero() {
               <br />
               <HeroTypewriter />
               <br />
-              for  legal eductaion in Ghana
+              for  Legal Eductaion in Ghana
             </span>
           </h1>
 
