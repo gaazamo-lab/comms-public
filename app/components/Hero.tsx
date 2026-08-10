@@ -40,14 +40,13 @@ export function Hero() {
 
           <h1
             className="m-0 font-heading text-[30px] font-bold leading-[1.3] tracking-normal text-white md:text-[52px]"
-            aria-label="Mananging the corporate communications and partnaship for the legal eductaion in Ghana"
+            aria-label="Managing the corporate communications and partnership for the legal education in Ghana"
           >
             <span aria-hidden="true">
-              Mananging the
-              <br />
+              Managing the <br />
               <HeroTypewriter />
               <br />
-              for  Legal Eductaion in Ghana
+              for Legal Education in Ghana
             </span>
           </h1>
 
