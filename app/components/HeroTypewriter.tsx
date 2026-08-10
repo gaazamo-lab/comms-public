@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const words = ["Corporate", "Communications", "and Partnerships"];
+const words = ["Corporate Communications", "", "Partnerships", ""];
 const typeDelay = 85;
 const deleteDelay = 45;
 const holdDelay = 900;
