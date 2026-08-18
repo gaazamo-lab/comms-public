@@ -14,7 +14,7 @@ import {
 
 const PILLARS = [
   {
-    title: "Media & Public Relations",
+    title: " Media & Public Relations",
     eyebrow: "Unit One",
     description:
       "Custodians of the institutional voice, news, press relations, public statements, the official website, social channels, content production and brand management for every corner of CLET.",
@@ -27,7 +27,7 @@ const PILLARS = [
     ],
   },
   {
-    title: "International Relations & Protocols",
+    title: "Events & Protocols Management",
     eyebrow: "Unit Two",
     description:
       "The diplomatic face of CLET managing intergovernmental engagement, ECOWAS and AU partnerships, VIP visits, protocol, translation and cross-border legal education cooperation.",
@@ -40,7 +40,7 @@ const PILLARS = [
     ],
   },
   {
-    title: "Strategic Partnerships",
+    title: " International Relations & Strategic Partnerships",
     eyebrow: "Unit Three",
     description:
       "Stewards of CLET's relationships with the Judiciary, the Bar, accredited universities, donors, ministries and external agencies — managing MOUs, public consultation and the partnership pipeline.",
