@@ -17,7 +17,7 @@ const PILLARS = [
     title: "Media & Public Relations",
     eyebrow: "Unit One",
     description:
-      "Custodians of the institutional voice — news, press relations, public statements, the official website, social channels, content production and brand management for every corner of CLET.",
+      "Custodians of the institutional voice, news, press relations, public statements, the official website, social channels, content production and brand management for every corner of CLET.",
     href: "#capabilities",
     image: "/images/micro.avif",
     bullets: [
@@ -30,7 +30,7 @@ const PILLARS = [
     title: "International Relations & Protocols",
     eyebrow: "Unit Two",
     description:
-      "The diplomatic face of CLET — managing intergovernmental engagement, ECOWAS and AU partnerships, VIP visits, protocol, translation and cross-border legal education cooperation.",
+      "The diplomatic face of CLET managing intergovernmental engagement, ECOWAS and AU partnerships, VIP visits, protocol, translation and cross-border legal education cooperation.",
     href: "#capabilities",
     image: "/images/dice.jpg",
     bullets: [
@@ -73,7 +73,7 @@ export function Pillars() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((pillar) => (
             <a
-              href={pillar.href}
+              // href={pillar.href}
               className={cn(card, "group block text-inherit hover:text-inherit")}
               key={pillar.title}
             >
@@ -103,7 +103,7 @@ export function Pillars() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-gold-600 transition-[gap,color] duration-200 group-hover:gap-2.5 group-hover:text-gold-700">
+              {/* <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-gold-600 transition-[gap,color] duration-200 group-hover:gap-2.5 group-hover:text-gold-700">
                 Learn more
                 <svg
                   width="14"
@@ -118,7 +118,7 @@ export function Pillars() {
                 >
                   <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </span>
+              </span> */}
             </a>
           ))}
         </div>

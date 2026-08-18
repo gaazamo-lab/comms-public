@@ -14,17 +14,18 @@ import {
 
 const RESPONSIBILITIES = [
   {
-    title: "01. Media & PR",
+    title: "01. Media & Public Relations",
     text: "Directing media strategy, official public statements, and brand governance.",
   },
   {
-    title: "02. International",
-    text: "Steering ECOWAS/AU relations, protocol, and cross-border cooperation.",
+    title: "02. Events & Protocols Management",
+    text: "Steering protocol, events management, and stakeholder coordination.",
   },
   {
-    title: "03. Partnerships",
-    text: "Stewardship of MOUs, donor relations, and stakeholder consulting.",
+    title: "03. International Relations & Strategic Partnerships",
+    text: "Steering ECOWAS/AU relations and cross-border cooperation. Stewardship of MOUs, donor relations, and stakeholder consulting.",
   },
+
 ];
 
 export function Leadership() {
@@ -69,7 +70,7 @@ export function Leadership() {
         </div>
 
         <div>
-          <h2 className="mb-6 font-heading text-[clamp(1.75rem,3vw,2.5rem)] font-bold leading-tight text-navy-900">
+          <h2 className="mb-6 font-heading text-[clamp(1.5rem,2.5vw,2.5rem)] font-bold leading-tight text-navy-900">
             Strategic direction for CLET&apos;s public engagement.
           </h2>
           <p className="mb-4 leading-[1.7] text-navy-500">
@@ -85,10 +86,10 @@ export function Leadership() {
             relations with regional and international legal education bodies.
           </p>
 
-          <div className="mt-7 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="mt-7 grid grid-cols-1 gap-4 lg:grid-cols-3">
             {RESPONSIBILITIES.map((item) => (
-              <article className={card} key={item.title}>
-                <p className={eyebrow}>{item.title}</p>
+              <article className={cn(card, "p-5")} key={item.title}>
+                <p className={cn(eyebrow, "whitespace-normal")}>{item.title}</p>
                 <p className={cn(cardText, "mt-3")}>{item.text}</p>
               </article>
             ))}

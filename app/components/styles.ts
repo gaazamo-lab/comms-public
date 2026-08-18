@@ -27,4 +27,4 @@ export const imageZoom =
   "group relative overflow-hidden [&_img]:motion-safe:transition-transform [&_img]:motion-safe:duration-[900ms] [&_img]:motion-safe:ease-[cubic-bezier(0.22,0.61,0.36,1)] hover:[&_img]:motion-safe:scale-[1.06]";
 
 export const twoColumn =
-  "grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16";
+  "grid grid-cols-1 items-center gap-12 xl:grid-cols-[1.1fr_1fr] xl:gap-16";

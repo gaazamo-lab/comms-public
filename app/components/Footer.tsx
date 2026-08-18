@@ -10,17 +10,12 @@ const FOOTER_NAV = [
       { label: "About CCP", href: "#about" },
       { label: "Our Units", href: "#pillars" },
       { label: "Capabilities", href: "#capabilities" },
-      { label: "Newsroom", href: "#newsroom" },
-    ],
-  },
-  {
-    title: "Engagement",
-    links: [
       { label: "Partnerships", href: "#partnerships" },
       { label: "International & Protocol", href: "#contact" },
-      { label: "Public Consultations", href: "#partnerships" },
+
     ],
   },
+
   {
     title: "Institution",
     links: [
@@ -63,7 +58,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {FOOTER_NAV.map((column) => (
             <div key={column.title}>
               <h4 className="mb-4 border-b border-white/10 pb-3 font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-400">

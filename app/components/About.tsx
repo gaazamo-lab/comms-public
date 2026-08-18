@@ -24,13 +24,13 @@ export function About() {
               className="h-full w-full object-cover"
             />
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(10,22,40,0.95),rgba(15,30,58,0.35)_50%,transparent)]" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 p-8">
+            {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 p-8">
               <p className="m-0 font-heading text-xl font-bold leading-snug text-white">
                 Clarity in public voice.
                 <br />
                 Discipline in engagement.
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="absolute -bottom-4 -right-4 -z-10 h-24 w-24 rounded-xl bg-gold-500/10" />
           <div className="absolute -left-4 -top-4 -z-10 h-16 w-16 rounded-xl bg-navy-700/10" />
