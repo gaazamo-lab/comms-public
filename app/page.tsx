@@ -4,6 +4,7 @@ import { About } from "./components/About";
 import { Leadership } from "./components/Leadership";
 import { Pillars } from "./components/Pillars";
 import { Capabilities } from "./components/Capabilities";
+import { Newsroom } from "./components/Newsroom";
 import { Partnerships } from "./components/Partnerships";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -51,6 +52,7 @@ export default function Home() {
         <Leadership />
         <Pillars />
         <Capabilities />
+        <Newsroom />
         <Partnerships />
         <Contact />
       </main>

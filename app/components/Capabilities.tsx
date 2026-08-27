@@ -123,7 +123,7 @@ export function Capabilities() {
           </h2>
           <p className={cn(subtitle, subtitleLight)}>
             Cluster C6 is the only cluster whose systems serve every other
-            cluster simultaneously — from accreditation to examinations to
+            cluster simultaneously from accreditation to examinations to
             compliance.
           </p>
         </header>

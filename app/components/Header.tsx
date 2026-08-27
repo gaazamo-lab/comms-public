@@ -5,12 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { container } from "./styles";
+import { SiteSearch } from "./SiteSearch";
 
 const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#leadership", label: "Leadership" },
   { href: "#pillars", label: "Our Units" },
   { href: "#capabilities", label: "Capabilities" },
+  { href: "#newsroom", label: "Newsroom" },
   { href: "#partnerships", label: "Partnerships" },
   { href: "#contact", label: "Contact" },
 ];
@@ -71,32 +73,35 @@ export function Header() {
             </ul>
           </nav>
 
-          <button
-            type="button"
-            className="-mr-2 inline-flex h-9 w-9 cursor-pointer flex-col items-center justify-center gap-[5px] bg-transparent p-0 lg:hidden"
-            aria-expanded={open}
-            aria-label="Toggle navigation menu"
-            onClick={() => setOpen((value) => !value)}
-          >
-            <span
-              className={cn(
-                "block h-[1.5px] w-5 origin-center bg-navy-900 transition-[transform,opacity] duration-200",
-                open && "translate-y-[6.5px] rotate-45"
-              )}
-            />
-            <span
-              className={cn(
-                "block h-[1.5px] w-5 origin-center bg-navy-900 transition-[transform,opacity] duration-200",
-                open && "opacity-0"
-              )}
-            />
-            <span
-              className={cn(
-                "block h-[1.5px] w-5 origin-center bg-navy-900 transition-[transform,opacity] duration-200",
-                open && "-translate-y-[6.5px] -rotate-45"
-              )}
-            />
-          </button>
+          <div className="flex items-center gap-2">
+            <SiteSearch />
+            <button
+              type="button"
+              className="-mr-2 inline-flex h-9 w-9 cursor-pointer flex-col items-center justify-center gap-[5px] bg-transparent p-0 lg:hidden"
+              aria-expanded={open}
+              aria-label="Toggle navigation menu"
+              onClick={() => setOpen((value) => !value)}
+            >
+              <span
+                className={cn(
+                  "block h-[1.5px] w-5 origin-center bg-navy-900 transition-[transform,opacity] duration-200",
+                  open && "translate-y-[6.5px] rotate-45"
+                )}
+              />
+              <span
+                className={cn(
+                  "block h-[1.5px] w-5 origin-center bg-navy-900 transition-[transform,opacity] duration-200",
+                  open && "opacity-0"
+                )}
+              />
+              <span
+                className={cn(
+                  "block h-[1.5px] w-5 origin-center bg-navy-900 transition-[transform,opacity] duration-200",
+                  open && "-translate-y-[6.5px] -rotate-45"
+                )}
+              />
+            </button>
+          </div>
         </div>
       </header>
     </div>

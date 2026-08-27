@@ -76,20 +76,17 @@ export function Partnerships() {
             ))}
           </div>
 
-          <div id="newsroom" className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <article className={card}>
-              <p className={eyebrow}>Newsroom</p>
+              <p className={eyebrow}>Consultation Desk</p>
               <h3 className="mb-3 mt-3 font-heading text-[1.15rem] font-bold leading-tight text-navy-900">
-                Press releases, statements and announcements
+                Public engagement and feedback
               </h3>
-              <p className={cn(cardText, "mb-4")}>
-                Official CLET press materials, Director-General statements,
-                examination notices and accreditation announcements will be
-                published here from vesting day, 1 July 2026.
+              <p className={cardText}>
+                Stakeholders can route policy feedback, partnership proposals
+                and consultation responses through the Directorate for tracking
+                and formal acknowledgement.
               </p>
-              <span className="inline-block rounded-full bg-gold-500/15 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.03em] text-gold-700">
-                Coming July 2026
-              </span>
             </article>
             <article className={card}>
               <p className={eyebrow}>Media Resources</p>

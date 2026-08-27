@@ -8,6 +8,7 @@ import {
   sectionAlt,
   twoColumn,
 } from "./styles";
+import { SOCIAL_LINKS } from "./siteData";
 
 const CONTACTS = [
   {
@@ -81,9 +82,10 @@ function PhoneIcon() {
 export function Contact() {
   return (
     <section id="contact" className={cn(section, sectionAlt)}>
-      <div className={cn(container, twoColumn)}>
-        <div>
-          <p className={eyebrow}>Contact</p>
+         <div className={cn(container, twoColumn)}>
+          <div>
+
+        <p className={eyebrow}>Contact</p>
           <h2 className="mb-6 mt-3 font-heading text-[clamp(1.75rem,3vw,2.5rem)] font-bold leading-tight text-navy-900">
             Get in touch with the directorate.
           </h2>
@@ -92,6 +94,11 @@ export function Contact() {
             Legal Education and Training in Accra. Our front office is open
             Monday to Friday, 08:30 – 17:00 GMT.
           </p>
+          </div>
+          </div>
+      <div className={cn(container, twoColumn)}>
+        <div>
+        
 
           <article className={cn(card, "mt-8")}>
             <p className={eyebrow}>Head Office</p>
@@ -112,6 +119,43 @@ export function Contact() {
               <PhoneIcon />
               +233 (0) 302 000 000
             </p>
+          </article>
+
+          <article className={cn(card, "mt-4")}>
+            <p className={eyebrow}>Social Media</p>
+            <p className={cn(cardText, "mt-3")}>
+              The Directorate is establishing its official channels. Until they
+              are announced here, only this website and the press desk carry
+              verified statements of the Council.
+            </p>
+            <div className="mt-5 grid grid-cols-2 gap-2">
+              {SOCIAL_LINKS.map((link) =>
+                link.href ? (
+                  <a
+                    className="rounded-lg border border-navy-800/10 px-3 py-2 text-[0.82rem] font-semibold text-navy-900 transition-colors hover:border-gold-500 hover:bg-gold-500/10"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={link.label}
+                  >
+                    <span className="block">{link.label}</span>
+                    <span className="block text-[0.72rem] font-medium text-navy-400">
+                      Follow
+                    </span>
+                  </a>
+                ) : (
+                  <span
+                    className="rounded-lg border border-dashed border-navy-800/15 px-3 py-2 text-[0.82rem] font-semibold text-navy-400"
+                    key={link.label}
+                  >
+                    <span className="block">{link.label}</span>
+                    <span className="block text-[0.72rem] font-medium text-navy-300">
+                      Launching soon
+                    </span>
+                  </span>
+                ),
+              )}
+            </div>
           </article>
         </div>
 

@@ -5,7 +5,6 @@ import {
   cardText,
   container,
   eyebrow,
-  eyebrowLight,
   imageZoom,
   section,
   sectionAlt,
