@@ -39,7 +39,7 @@ export function Footer() {
         <div>
           <Link href="/" className="flex items-center gap-4">
             <Image
-              src="/logos/CLET logo.png"
+              src="/logos/CLET LOGOS OFFICIAL copy-03.png"
               alt=""
               width={56}
               height={56}

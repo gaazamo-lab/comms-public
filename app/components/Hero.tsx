@@ -25,7 +25,7 @@ export function Hero() {
         <div className="max-w-4xl">
           <span className="mb-6 inline-flex items-center gap-[0.85rem] md:mb-8">
             <Image
-              src="/logos/CLET CCP Logo .png"
+              src="/logos/CLET DIRECTORATES LOGO-05.png"
               alt=""
               width={56}
               height={56}

@@ -31,7 +31,7 @@ export function Header() {
             onClick={() => setOpen(false)}
           >
             <Image
-              src="/logos/CLET CCP Logo .png"
+              src="/logos/CLET DIRECTORATES LOGO-05.png"
               alt="CLET CCP Directorate emblem"
               width={64}
               height={64}
